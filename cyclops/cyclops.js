@@ -1,24 +1,13 @@
 const isCyclops = (decimal) => {
-  const binary = decimal.toString(2);
-  console.log(binary);
-  const numZeros = (binary.match(/0/g) || []).length
-  console.log(numZeros);
-  const numDigits = binary.length
-  console.log(numDigits);
+  const binaryArray = decimal.toString(2).split("0");
+  console.log(binaryArray);
+
   
-  
-  if(numZeros === 1 && numDigits % 2 == 1) {
-    const onesArray = binary.split("0")
-    if (onesArray[0] === onesArray[1]) {
-      return true
-    }
-    else {
-      return false
-    }
-    }
-    else {
-      return false
-    }
+  if (binaryArray.length === 2 && binaryArray[0] === binaryArray[1]) {
+    return true
+  } else {
+    return false
+  }
 }
 
 module.exports = isCyclops;
