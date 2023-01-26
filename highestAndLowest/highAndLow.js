@@ -4,9 +4,9 @@
 // const input = "1 2 3 4 5"
 
 const highAndLow = (input) => {
-  array = input.split(" ")
+  array = input.split(" ").map(num => parseInt(num)).sort((a, b) => {a - b})
 
-  return `${array[0]} ${array[1]}`
+  return `${array[array.length-1]} ${array[1]}`
 }
 
 module.exports = highAndLow

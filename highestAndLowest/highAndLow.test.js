@@ -26,4 +26,12 @@ describe('highAndLow', () => {
     expect(input2.match(returnValue2.charAt(2))).not.toEqual(null);
   });
 
+  it('returns the highest number of the input array as the first character in the array', () => {
+    const input1 = "3 4 5 1 2"
+    const input2 = "8 9 3 -1 1"
+    
+    expect(highAndLow(input1).charAt(0)).toEqual("5")
+    expect(highAndLow(input2).charAt(0)).toEqual("9")
+  });
+
 });
