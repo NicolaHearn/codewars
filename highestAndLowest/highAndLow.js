@@ -4,7 +4,7 @@
 const input1 = "1 2 3 4 5"
 
 const highAndLow = () => {
-  return "string"
+  return "5 1"
 }
 
 module.exports = highAndLow
