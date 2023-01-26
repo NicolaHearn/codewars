@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/NicolaHearn/codewars#readme",
   "dependencies": {
-    "jest": "^29.3.1"
+    "jest": "^29.4.0"
   }
 }
